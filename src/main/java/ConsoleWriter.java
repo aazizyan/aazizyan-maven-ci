@@ -11,11 +11,11 @@ public class ConsoleWriter implements LoggingHelper {
 
     public void writeLine(String line) {
         memo += line;
+        prev = memo;
     }
 
     public void flush() {
         System.out.println(memo);
-        prev = memo;
         memo = "";
     }
 
