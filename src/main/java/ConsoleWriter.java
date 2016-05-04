@@ -13,6 +13,7 @@ public class ConsoleWriter implements LoggingHelper {
 
     public void flush() {
         System.out.println(memo);
+        memo = "";
     }
 
     @Override
